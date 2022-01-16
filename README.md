@@ -48,3 +48,6 @@ Sentence: 2   there       O
 Sentence: 2   !           O
 ```
 
+## TODO list:
+
+> include word embeddings to return and save a numpy array for dataset. For example, dataset have 2000 words and FastText embeddings with 300 dimensions are implemented. Map each word to its word vector end return and save (2000, 300) array. (useful for sklearn and tensor flow linraries for several machine learning model.)
