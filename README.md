@@ -6,6 +6,14 @@ However these libraries need a bit structured data. Therefore, CoNLL and Sentenc
 Followings are brief descriptions of the formats:
 
 ## XML
+In XML format, our file will be in the below format, where IOB2 tags are in a block.
+Each line is a sentence. Words are in raw format, i.e. not tokenized.
+```
+<doc>
+    <tag1>New York</tag1> is a city.
+    Hello, there!
+</doc>
+```
 
 ## CoNLL
 In this format, each word presented with its tag, and sentences are separated with an empty line. 
@@ -23,6 +31,7 @@ Hello O
 there O
 !     O
 ```
+
 ## Sentenced
 In this format each word is presented with its tag and sentence number, all separated with tab.
 ```
@@ -33,5 +42,9 @@ Sentence: 1   is          O
 Sentence: 1   a           O
 Sentence: 1   beautiful   O
 Sentence: 1   city        O
+Sentence: 2   Hello       O
+Sentence: 2   ,           O
+Sentence: 2   there       O
+Sentence: 2   !           O
 ```
 
